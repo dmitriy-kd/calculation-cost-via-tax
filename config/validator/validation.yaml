@@ -1,0 +1,8 @@
+#App\Form\CostForm:
+#  properties:
+#    cost:
+#      - Positive: ~
+#    taxNumber:
+#      - Regex:
+#        pattern: '/(DE\d{9})/'
+#        message: 'Tax number does not match the format'

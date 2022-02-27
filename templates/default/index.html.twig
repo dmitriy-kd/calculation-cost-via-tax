@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="pure-g" style="text-align: center;">
+    <div class="pure-u-1-1">
+    {{ form_start(form, {'attr': {'class': 'pure-form'}}) }}
+        <div class="pure-u-1-1">
+            {{ form_errors(form) }}
+        </div>
+        <div class="pure-u-1-1">
+            <fieldset>
+                <legend>Calculation price, including tax</legend>
+                {{ form_row(form.taxNumber) }}
+                {{ form_row(form.cost) }}
+            </fieldset>
+        </div>
+    {{ form_end(form) }}
+    </div>
+</div>
+
+{% endblock %}
